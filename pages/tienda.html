@@ -1,40 +1,1164 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda</title>
 
-    <link rel="stylesheet" href="../css/estilo.css">
-    <link rel="shortcut icon" href="./favicon.ico" type="imgame/x-icon">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LedesmaPrints 3D</title>
+
+  
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+ 
+  <link rel="stylesheet" href="../css/estiloTienda.css">
+  <link rel="stylesheet" href="../css/estilo.css"> 
+
+
+  <link rel="shortcut icon" href="../favicon.ico" type="imgame/x-icon">
 
 </head>
-<body>
-    
-    <header class="header">
 
-        <div class="box-Header">
+<body >
 
-            <div class="box-Logo">
-                 <a  href="../index.html" > <img src="../assets/img/logo.png"  alt="Logo"> </a> 
-             </div>
+  <header>
+    <div class="px-3 py-2 text-bg-dark border-bottom">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="../index.html"
+            class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-decoration-none text-white">
+            <img class="bi me-2 " width="32" height="32" src="../assets/img/logo.png" alt="Logo">
+            LedesmaPrints 3D
+          </a>
 
-             <nav class="nav" >
- 
-                 <ul class="listaNav">
+          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+            <li>
+              <a href="../index.html" class="nav-link text-white  ">
+                <img src="../assets/img/icons/hearderInicio.png" class="bi d-block mx-auto mb-1 " alt="hearderInicio"
+                  width="24" height="24">
+                Inicio
+              </a>
+            </li>
+            <li>
+              <a href="../pages/tienda.html" class="nav-link text-secondary">
+                <img src="../assets/img/icons/hearderTienda.png" class="bi d-block mx-auto mb-1 " alt="hearderInicio"
+                  width="24" height="24">
+                Tienda
+              </a>
+            </li>
+            <li>
+              <a href="../pages/galeria.html" class="nav-link text-white">
+                <img src="../assets/img/icons/hearderGaleria.png" class="bi d-block mx-auto mb-1 " alt="hearderInicio"
+                  width="24" height="24">
+                Galeria
+              </a>
+            </li>
+            <li>
+              <a href="../pages/nosotros.html" class="nav-link text-white">
+                <img src="../assets/img/icons/hearderNosotros.png" class="bi d-block mx-auto mb-1 " alt="hearderInicio"
+                  width="24" height="24">
+                Nosotros
+              </a>
+            </li>
+            <li>
+              <a href="../pages/contacto.html" class="nav-link text-white">
+                <img src="../assets/img/icons/hearderContacto.png" class="bi d-block mx-auto mb-1 " alt="hearderInicio"
+                  width="24" height="24">
+                Contacto
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-                    <li class="listaItem"> <a href="../index.html">Inicio</a></li>
-                    <li class="listaItem"> <a href="./tienda.html">Tienda</a></li>
-                    <li class="listaItem"> <a href="./galeria.html">Galeria</a></li>
-                    <li class="listaItem"> <a href="./nosotros.html">Nosotros</a></li>
-                    <li class="listaItem"> <a href="./contacto.html">Contacto</a></li>
+  </header>
 
-                 </ul>
 
-            </nav>
+
+  <!--  ----------------------------------------------------------------------------------------- MAIN --------------------------------------------------------------------------- -->
+
+
+  <main>
+
+  <!-- ************************************************************************* Carousel ********************************************************************************-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class=" carousel-inner py-5 "  >
+        <div class="carousel-item active ">
+            <img src="../assets/img/fondos/fondo2.jpg"  class=" imgFondoCarousel" alt="fondo2"  > 
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/img/fondos/fondo6.jpg" class="imgFondoCarousel" alt="fondo6">
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/img/fondos/fondo4.jpg" class="imgFondoCarousel" alt="fondo4">
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/img/fondos/fondo7.jpg" class="imgFondoCarousel" alt="fondo7">
         </div>
 
-    </header>
-    
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"> <- </span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"> -> </span>
+      </button>
+    </div>
+
+
+
+
+    <!-- ************************************************************************* Productos ********************************************************************************-->
+
+    <div class="container mt-5">
+
+
+      <div class="row py-3">
+
+        <!-- *******************************************************************     Producto 1   ****************************************************************************** -->
+
+        <div class="col-lg-3 col-md-4 col-sm-6 py-2">
+
+          <div class="card w-100 ">
+            <div class="image-container">
+              <div class="first">
+
+                <div class="d-flex justify-content-between align-items-center">
+
+                  <span class="discount"></span> <!-- Si tiene descuento   -->
+                  <span class="wishlist"><i class="fa fa-heart-o"></i></span>
+
+                </div>
+              </div>
+
+              <img src="../assets/img/productos/dragonArticulado.png" class="img-fluid rounded thumbnail-image">
+
+            </div>
+
+
+            <div class="product-detail-container p-2">
+
+              <div class="d-flex justify-content-between align-items-center border-bottom border-black">
+
+                <h5 class="dress-name">Dragon articulado</h5>
+
+                <div class="d-flex flex-column mb-2">
+
+                  <span class="new-price">$ 4000</span>
+                  <small class="old-price text-right"></small>
+                </div>
+
+              </div>
+
+
+
+
+              <div class="d-flex justify-content-center align-items-center pt-1">
+                <div>
+                  <i class="fa fa-star-o rating-star"></i>
+                  <p class="rating-number p-1">Dragón Articulado, hecho en plástico de origen vegetal, ideal para regalo
+                    o decoración, 100% Articulado, la manipulación del mismo provoca un efecto de relajación.</p>
+                </div>
+                <!--  
+    								<span class="buy border border-3 rounded-pill border-danger border-opacity-50 p-2" >Comprar +</span>
+    							-->
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class=" mt-3 ">
+            <div class=" voutchers w-100  ">
+
+              <div class="voutcher-divider " ">
+
+    							<div class=" voutcher-left text-center d-flex align-items-center justify-content-center">
+
+                <p class="voutcher-code  line-height">Comprar</p>
+
+              </div>
+              <div class="voutcher-right text-center border-left pt-2">
+
+                <img src="../assets/img/icons/carritocompras .png" class="bi d-block mx-auto mb-1 " alt="hearderInicio"
+                  width="24" height="24">
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- *******************************************************************     Producto 2   ****************************************************************************** -->
+
+
+      <div class="col-lg-3 col-md-4 col-sm-6 py-2">
+
+        <div class="card w-100 ">
+          <div class="image-container">
+            <div class="first">
+
+              <div class="d-flex justify-content-between align-items-center">
+
+                <span class="discount"></span> <!-- Si tiene descuento   -->
+                <span class="wishlist"><i class="fa fa-heart-o"></i></span>
+
+              </div>
+            </div>
+
+            <img src="../assets/img/productos/soporteVenom.webp" class="img-fluid rounded thumbnail-image ">
+
+          </div>
+
+
+          <div class="product-detail-container p-2">
+
+            <div class="d-flex justify-content-between align-items-center border-bottom border-black">
+
+              <h5 class="dress-name">Soporte de Venom</h5>
+
+              <div class="d-flex flex-column mb-2">
+
+                <span class="new-price">$ 10000</span>
+                <small class="old-price text-right"> </small>
+              </div>
+
+            </div>
+
+
+
+
+            <div class="d-flex justify-content-center align-items-center pt-1">
+              <div>
+                <i class="fa fa-star-o rating-star"></i>
+                <p class="rating-number p-1"> Un soporte de celular impreso en 3D de Venom es un accesorio diseñado para
+                  mantener tu teléfono de forma segura y con estilo. Inspirado en el icónico personaje de Venom de
+                  Marvel, este soporte presenta un diseño detallado y aterrador que captura la esencia del simbionte.
+                </p>
+              </div>
+              <!--  
+                  <span class="buy border border-3 rounded-pill border-danger border-opacity-50 p-2" >Comprar +</span>
+                -->
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class=" mt-3 ">
+          <div class=" voutchers w-100  ">
+
+            <div class="voutcher-divider " ">
+
+                <div class=" voutcher-left text-center d-flex align-items-center justify-content-center">
+
+              <p class="voutcher-code  line-height">Comprar</p>
+
+            </div>
+            <div class="voutcher-right text-center border-left pt-2">
+
+              <img src="../assets/img/icons/carritocompras .png" class="bi d-block mx-auto mb-1 " alt="hearderInicio"
+                width="24" height="24">
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- *******************************************************************     Producto 3  ****************************************************************************** -->
+
+    <div class="col-lg-3 col-md-4 col-sm-6 py-2">
+
+      <div class="card w-100 "">
+            <div class=" image-container">
+        <div class="first">
+
+          <div class="d-flex justify-content-between align-items-center">
+
+            <span class="discount"></span> <!-- Si tiene descuento   -->
+            <span class="wishlist"><i class="fa fa-heart-o"></i></span>
+
+          </div>
+        </div>
+
+        <img src="../assets/img/productos/mateChimuelo.webp" class="img-fluid rounded thumbnail-image">
+
+      </div>
+
+
+      <div class="product-detail-container p-2">
+
+        <div class="d-flex justify-content-between align-items-center border-bottom border-black">
+
+          <h5 class="dress-name">Mate Chimuelo</h5>
+
+          <div class="d-flex flex-column mb-2">
+
+            <span class="new-price">$ 3000</span>
+            <small class="old-price text-right"></small>
+          </div>
+
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center pt-1">
+          <div>
+            <i class="fa fa-star-o rating-star"></i>
+            <p class="rating-number p-1">Un mate de Chimuelo impreso en 3D es una pieza de coleccionista que combina la
+              tradición de la infusión de yerba mate con la magia de la película "Cómo entrenar a tu dragón". Este mate
+              presenta una elaborada impresión en 3D del querido personaje Chimuelo, el dragón sin dientes de la
+              película, con un nivel impresionante de detalle y fidelidad al diseño original.</p>
+          </div>
+          <!--      <span class="buy border border-3 rounded-pill border-danger border-opacity-50 p-2" >Comprar +</span>  -->
+        </div>
+      </div>
+
+    </div>
+
+    <div class=" mt-3 ">
+      <div class=" voutchers w-100  ">
+
+        <div class="voutcher-divider " ">
+
+                <div class=" voutcher-left text-center d-flex align-items-center justify-content-center">
+
+          <p class="voutcher-code  line-height">Comprar</p>
+
+        </div>
+        <div class="voutcher-right text-center border-left pt-2">
+
+          <img src="../assets/img/icons/carritocompras .png" class="bi d-block mx-auto mb-1 " alt="hearderInicio"
+            width="24" height="24">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+
+    <!-- *******************************************************************     Producto  4 ****************************************************************************** -->
+
+
+    <div class="col-lg-3 col-md-4 col-sm-6 py-2">
+
+      <div class="card w-100 "">
+          <div class=" image-container">
+        <div class="first">
+
+          <div class="d-flex justify-content-between align-items-center ">
+
+            <span class="discount"></span> <!-- Si tiene descuento   -->
+            <span class="wishlist"><i class="fa fa-heart-o"></i></span>
+
+          </div>
+        </div>
+
+        <img src="../assets/img/productos/mateGroot.jpg" class="img-fluid rounded thumbnail-image">
+
+      </div>
+
+
+      <div class="product-detail-container p-2 ">
+
+        <div class="d-flex justify-content-between align-items-center border-bottom border-black">
+
+          <h5 class="dress-name">Mate Groot</h5>
+
+          <div class="d-flex flex-column mb-2">
+
+            <span class="new-price">$ 3000</span>
+            <small class="old-price text-right"></small>
+          </div>
+
+        </div>
+
+
+
+
+        <div class="d-flex justify-content-center align-items-center pt-1">
+          <div>
+            <i class="fa fa-star-o rating-star"></i>
+            <p class="rating-number p-1">Un mate de Groot impreso en 3D es una obra maestra que combina la tradición del
+              mate con la querida figura del personaje Groot del universo de Marvel. Este mate presenta una
+              impresionante impresión en 3D de Groot, el carismático árbol humanoide de los Guardianes de la Galaxia,
+              con un alto nivel de detalle y fidelidad al diseño original.</p>
+          </div>
+          <!--  
+                <span class="buy border border-3 rounded-pill border-danger border-opacity-50 p-2" >Comprar +</span>
+              -->
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" mt-3 ">
+      <div class=" voutchers w-100  ">
+
+        <div class="voutcher-divider " ">
+
+              <div class=" voutcher-left text-center d-flex align-items-center justify-content-center">
+
+          <p class="voutcher-code  line-height">Comprar</p>
+
+        </div>
+        <div class="voutcher-right text-center border-left pt-2">
+
+          <img src="../assets/img/icons/carritocompras .png" class="bi d-block mx-auto mb-1 " alt="hearderInicio"
+            width="24" height="24">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    <!-- *******************************************************************     Producto 5  ****************************************************************************** -->
+
+
+    <div class="col-lg-3 col-md-4 col-sm-6 py-2">
+
+      <div class="card w-100 "">
+          <div class=" image-container">
+        <div class="first">
+
+          <div class="d-flex justify-content-between align-items-center ">
+
+            <span class="discount"></span> <!-- Si tiene descuento   -->
+            <span class="wishlist"><i class="fa fa-heart-o"></i></span>
+
+          </div>
+        </div>
+
+        <img src="../assets/img/productos/llaveroMerlina.jpg" class="img-fluid rounded thumbnail-image">
+
+      </div>
+
+
+      <div class="product-detail-container p-2 ">
+
+        <div class="d-flex justify-content-between align-items-center border-bottom border-black">
+
+          <h5 class="dress-name">Llaveros Merlina</h5>
+
+          <div class="d-flex flex-column mb-2">
+
+            <span class="new-price">$ 300</span>
+            <small class="old-price text-right"></small>
+          </div>
+
+        </div>
+
+
+
+
+        <div class="d-flex justify-content-center align-items-center pt-1">
+          <div>
+            <i class="fa fa-star-o rating-star"></i>
+            <p class="rating-number p-1">Los llaveros de Merlina impresos en 3D son encantadores accesorios que rinden
+              homenaje a la misteriosa y carismática bruja Merlina, conocida por su presencia en la cultura popular.
+              Estos llaveros presentan una réplica en miniatura de Merlina impresa en 3D con una atención al detalle
+              sorprendente, capturando su personalidad única y su estilo distintivo.</p>
+          </div>
+          <!--  
+                <span class="buy border border-3 rounded-pill border-danger border-opacity-50 p-2" >Comprar +</span>
+              -->
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" mt-3 ">
+      <div class=" voutchers w-100  ">
+
+        <div class="voutcher-divider " ">
+
+              <div class=" voutcher-left text-center d-flex align-items-center justify-content-center">
+
+          <p class="voutcher-code  line-height">Comprar</p>
+
+        </div>
+        <div class="voutcher-right text-center border-left pt-2">
+
+          <img src="../assets/img/icons/carritocompras .png" class="bi d-block mx-auto mb-1 " alt="hearderInicio"
+            width="24" height="24">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    <!-- *******************************************************************     Producto 6  ****************************************************************************** -->
+    <div class="col-lg-3 col-md-4 col-sm-6 py-2">
+
+      <div class="card w-100 "">
+          <div class=" image-container">
+        <div class="first">
+
+          <div class="d-flex justify-content-between align-items-center ">
+
+            <span class="discount"></span> <!-- Si tiene descuento   -->
+            <span class="wishlist"><i class="fa fa-heart-o"></i></span>
+
+          </div>
+        </div>
+
+        <img src="../assets/img/productos/mateBoca.jpeg" class="img-fluid rounded thumbnail-image">
+
+      </div>
+
+
+      <div class="product-detail-container p-2 ">
+
+        <div class="d-flex justify-content-between align-items-center border-bottom border-black">
+
+          <h5 class="dress-name">Mate Boca Juniors</h5>
+
+          <div class="d-flex flex-column mb-2">
+
+            <span class="new-price">$ 3000</span>
+            <small class="old-price text-right"></small>
+          </div>
+
+        </div>
+
+
+
+
+        <div class="d-flex justify-content-center align-items-center pt-1">
+          <div>
+            <i class="fa fa-star-o rating-star"></i>
+            <p class="rating-number p-1">Fabricado con plástico resistente y duradero, este mate es funcional y
+              duradero, ideal para disfrutar de la infusión de yerba mate con estilo. Además de ser una herramienta
+              práctica para los amantes del mate, también funciona como un símbolo de orgullo y lealtad hacia Boca
+              Juniors</p>
+          </div>
+          <!--  
+                <span class="buy border border-3 rounded-pill border-danger border-opacity-50 p-2" >Comprar +</span>
+              -->
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" mt-3 ">
+      <div class=" voutchers w-100  ">
+
+        <div class="voutcher-divider " ">
+
+              <div class=" voutcher-left text-center d-flex align-items-center justify-content-center">
+
+          <p class="voutcher-code  line-height">Comprar</p>
+
+        </div>
+        <div class="voutcher-right text-center border-left pt-2">
+
+          <img src="../assets/img/icons/carritocompras .png" class="bi d-block mx-auto mb-1 " alt="hearderInicio"
+            width="24" height="24">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    <!-- *******************************************************************     Producto 7   ****************************************************************************** -->
+
+    <div class="col-lg-3 col-md-4 col-sm-6 py-2">
+
+      <div class="card w-100 "">
+          <div class=" image-container">
+        <div class="first">
+
+          <div class="d-flex justify-content-between align-items-center ">
+
+            <span class="discount"></span> <!-- Si tiene descuento   -->
+            <span class="wishlist"><i class="fa fa-heart-o"></i></span>
+
+          </div>
+        </div>
+
+        <img src="../assets/img/productos/mateHarryPotter.jpeg" class="img-fluid rounded thumbnail-image">
+
+      </div>
+
+
+      <div class="product-detail-container p-2 ">
+
+        <div class="d-flex justify-content-between align-items-center border-bottom border-black">
+
+          <h5 class="dress-name">Mate Harry Potter</h5>
+
+          <div class="d-flex flex-column mb-2">
+
+            <span class="new-price">$ 3000</span>
+            <small class="old-price text-right"></small>
+          </div>
+
+        </div>
+
+
+
+
+        <div class="d-flex justify-content-center align-items-center pt-1">
+          <div>
+            <i class="fa fa-star-o rating-star"></i>
+            <p class="rating-number p-1">Un mate de Harry Potter impreso en 3D es un producto mágico diseñado para los
+              amantes del mundo de Harry Potter. Este mate presenta una impresión en 3D detallada con elementos icónicos
+              de la serie, como el escudo de Hogwarts, las gafas y la cicatriz de Harry Potter, así como otros símbolos
+              relacionados con la magia y la brujería.</p>
+          </div>
+          <!--  
+                <span class="buy border border-3 rounded-pill border-danger border-opacity-50 p-2" >Comprar +</span>
+              -->
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" mt-3 ">
+      <div class=" voutchers w-100  ">
+
+        <div class="voutcher-divider " ">
+
+              <div class=" voutcher-left text-center d-flex align-items-center justify-content-center">
+
+          <p class="voutcher-code  line-height">Comprar</p>
+
+        </div>
+        <div class="voutcher-right text-center border-left pt-2">
+
+          <img src="../assets/img/icons/carritocompras .png" class="bi d-block mx-auto mb-1 " alt="hearderInicio"
+            width="24" height="24">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    <!-- *******************************************************************     Producto  8 ****************************************************************************** -->
+
+    <div class="col-lg-3 col-md-4 col-sm-6 py-2">
+
+      <div class="card w-100 "">
+          <div class=" image-container">
+        <div class="first">
+
+          <div class="d-flex justify-content-between align-items-center ">
+
+            <span class="discount"></span> <!-- Si tiene descuento   -->
+            <span class="wishlist"><i class="fa fa-heart-o"></i></span>
+
+          </div>
+        </div>
+
+        <img src="../assets/img/productos/mateStitch.webp" class="img-fluid rounded thumbnail-image">
+
+      </div>
+
+
+      <div class="product-detail-container p-2 ">
+
+        <div class="d-flex justify-content-between align-items-center border-bottom border-black">
+
+          <h5 class="dress-name">Mate Stitch</h5>
+
+          <div class="d-flex flex-column mb-2">
+
+            <span class="new-price">$ 3000</span>
+            <small class="old-price text-right"></small>
+          </div>
+
+        </div>
+
+
+
+
+        <div class="d-flex justify-content-center align-items-center pt-1">
+          <div>
+            <i class="fa fa-star-o rating-star"></i>
+            <p class="rating-number p-1">Un mate de Stitch impreso en 3D es un adorable y divertido accesorio inspirado
+              en el popular personaje de Disney, Stitch, de la película "Lilo & Stitch". Este mate cuenta con una
+              detallada impresión en 3D de Stitch, capturando su apariencia única y encantadora.</p>
+          </div>
+          <!--  
+                <span class="buy border border-3 rounded-pill border-danger border-opacity-50 p-2" >Comprar +</span>
+              -->
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" mt-3 ">
+      <div class=" voutchers w-100  ">
+
+        <div class="voutcher-divider " ">
+
+              <div class=" voutcher-left text-center d-flex align-items-center justify-content-center">
+
+          <p class="voutcher-code  line-height">Comprar</p>
+
+        </div>
+        <div class="voutcher-right text-center border-left pt-2">
+
+          <img src="../assets/img/icons/carritocompras .png" class="bi d-block mx-auto mb-1 " alt="hearderInicio"
+            width="24" height="24">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    <!-- *******************************************************************     Producto 9  ****************************************************************************** -->
+
+    <div class="col-lg-3 col-md-4 col-sm-6 py-2">
+
+      <div class="card w-100 "">
+          <div class=" image-container">
+        <div class="first">
+
+          <div class="d-flex justify-content-between align-items-center ">
+
+            <span class="discount"></span> <!-- Si tiene descuento   -->
+            <span class="wishlist"><i class="fa fa-heart-o"></i></span>
+
+          </div>
+        </div>
+
+        <img src="../assets/img/productos/soporteMessi.jpg" class="img-fluid rounded thumbnail-image">
+
+      </div>
+
+
+      <div class="product-detail-container p-2 ">
+
+        <div class="d-flex justify-content-between align-items-center border-bottom border-black">
+
+          <h5 class="dress-name">Soporte de Messi</h5>
+
+          <div class="d-flex flex-column mb-2">
+
+            <span class="new-price">$ 8000</span>
+            <small class="old-price text-right"></small>
+          </div>
+
+        </div>
+
+
+
+
+        <div class="d-flex justify-content-center align-items-center pt-1">
+          <div>
+            <i class="fa fa-star-o rating-star"></i>
+            <p class="rating-number p-1">Un soporte de celular o joystick de Messi impreso en 3D es un emocionante
+              accesorio para los fanáticos del fútbol y del talentoso jugador argentino Lionel Messi. Este versátil
+              producto está diseñado para brindar comodidad y estilo a tus actividades cotidianas.</p>
+          </div>
+          <!--  
+                <span class="buy border border-3 rounded-pill border-danger border-opacity-50 p-2" >Comprar +</span>
+              -->
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" mt-3 ">
+      <div class=" voutchers w-100  ">
+
+        <div class="voutcher-divider " ">
+
+              <div class=" voutcher-left text-center d-flex align-items-center justify-content-center">
+
+          <p class="voutcher-code  line-height">Comprar</p>
+
+        </div>
+        <div class="voutcher-right text-center border-left pt-2">
+
+          <img src="../assets/img/icons/carritocompras .png" class="bi d-block mx-auto mb-1 " alt="hearderInicio"
+            width="24" height="24">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    <!-- *******************************************************************     Producto 10   ****************************************************************************** -->
+
+    <div class="col-lg-3 col-md-4 col-sm-6 py-2">
+
+      <div class="card w-100 "">
+          <div class=" image-container">
+        <div class="first">
+
+          <div class="d-flex justify-content-between align-items-center ">
+
+            <span class="discount"></span> <!-- Si tiene descuento   -->
+            <span class="wishlist"><i class="fa fa-heart-o"></i></span>
+
+          </div>
+        </div>
+
+        <img src="../assets/img/productos/soporteCrash.webp" class="img-fluid rounded thumbnail-image">
+
+      </div>
+
+
+      <div class="product-detail-container p-2 ">
+
+        <div class="d-flex justify-content-between align-items-center border-bottom border-black">
+
+          <h5 class="dress-name">Soporte Crash</h5>
+
+          <div class="d-flex flex-column mb-2">
+
+            <span class="new-price">$ 6500</span>
+            <small class="old-price text-right"></small>
+          </div>
+
+        </div>
+
+
+
+
+        <div class="d-flex justify-content-center align-items-center pt-1">
+          <div>
+            <i class="fa fa-star-o rating-star"></i>
+            <p class="rating-number p-1">Un soporte de celular o joystick de Crash impreso en 3D es un accesorio
+              imprescindible para los fanáticos del icónico personaje de videojuegos Crash Bandicoot. Este versátil
+              producto combina la funcionalidad con la diversión y está diseñado para brindar comodidad y estilo a tus
+              actividades diarias..</p>
+          </div>
+          <!--  
+                <span class="buy border border-3 rounded-pill border-danger border-opacity-50 p-2" >Comprar +</span>
+              -->
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" mt-3 ">
+      <div class=" voutchers w-100  ">
+
+        <div class="voutcher-divider " ">
+
+              <div class=" voutcher-left text-center d-flex align-items-center justify-content-center">
+
+          <p class="voutcher-code  line-height">Comprar</p>
+
+        </div>
+        <div class="voutcher-right text-center border-left pt-2">
+
+          <img src="../assets/img/icons/carritocompras .png" class="bi d-block mx-auto mb-1 " alt="hearderInicio"
+            width="24" height="24">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    <!-- *******************************************************************     Producto 11  ****************************************************************************** -->
+
+    <div class="col-lg-3 col-md-4 col-sm-6 py-2">
+
+      <div class="card w-100 "">
+          <div class=" image-container">
+        <div class="first">
+
+          <div class="d-flex justify-content-between align-items-center ">
+
+            <span class="discount"></span> <!-- Si tiene descuento   -->
+            <span class="wishlist"><i class="fa fa-heart-o"></i></span>
+
+          </div>
+        </div>
+
+        <img src="../assets/img/productos/copaMundo.webp" class="img-fluid rounded thumbnail-image">
+
+      </div>
+
+
+      <div class="product-detail-container p-2 ">
+
+        <div class="d-flex justify-content-between align-items-center border-bottom border-black">
+
+          <h5 class="dress-name">Copa del Mundo</h5>
+
+          <div class="d-flex flex-column mb-2">
+
+            <span class="new-price">$ 9000</span>
+            <small class="old-price text-right"></small>
+          </div>
+
+        </div>
+
+
+
+
+        <div class="d-flex justify-content-center align-items-center pt-1">
+          <div>
+            <i class="fa fa-star-o rating-star"></i>
+            <p class="rating-number p-1">Hecha con una impresión en 3D de alta calidad, esta copa del mundo captura los
+              intrincados detalles del trofeo real, incluyendo sus curvas, relieves y texturas. Es una pieza de
+              colección que puede exhibirse con orgullo en tu hogar, oficina o cualquier lugar que desees destacar el
+              espíritu deportivo.</p>
+          </div>
+          <!--  
+                <span class="buy border border-3 rounded-pill border-danger border-opacity-50 p-2" >Comprar +</span>
+              -->
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" mt-3 ">
+      <div class=" voutchers w-100  ">
+
+        <div class="voutcher-divider " ">
+
+              <div class=" voutcher-left text-center d-flex align-items-center justify-content-center">
+
+          <p class="voutcher-code  line-height">Comprar</p>
+
+        </div>
+        <div class="voutcher-right text-center border-left pt-2">
+
+          <img src="../assets/img/icons/carritocompras .png" class="bi d-block mx-auto mb-1 " alt="hearderInicio"
+            width="24" height="24">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    <!-- *******************************************************************     Producto 12   ****************************************************************************** -->
+    <div class="col-lg-3 col-md-4 col-sm-6 py-2">
+
+      <div class="card w-100 "">
+          <div class=" image-container">
+        <div class="first">
+
+          <div class="d-flex justify-content-between align-items-center ">
+
+            <span class="discount"></span> <!-- Si tiene descuento   -->
+            <span class="wishlist"><i class="fa fa-heart-o"></i></span>
+
+          </div>
+        </div>
+
+        <img src="../assets/img/productos/soporteDeadpool.jpg" class="img-fluid rounded thumbnail-image">
+
+      </div>
+
+
+      <div class="product-detail-container p-2 ">
+
+        <div class="d-flex justify-content-between align-items-center border-bottom border-black">
+
+          <h5 class="dress-name">Soporte de Deadpool</h5>
+
+          <div class="d-flex flex-column mb-2">
+
+            <span class="new-price">$ 4000</span>
+            <small class="old-price text-right"></small>
+          </div>
+
+        </div>
+
+
+
+
+        <div class="d-flex justify-content-center align-items-center pt-1">
+          <div>
+            <i class="fa fa-star-o rating-star"></i>
+            <p class="rating-number p-1">Un soporte de Deadpool para celular sentado en el inodoro impreso en 3D es un
+              accesorio ingenioso y divertido que combina el humor característico del personaje Deadpool con la
+              funcionalidad de un soporte para teléfono. Este producto muestra a Deadpool, el antihéroe de Marvel, en su
+              característica postura relajada en un inodoro, lo que añade un toque de irreverencia y humor a tu espacio.
+            </p>
+          </div>
+          <!--  
+                <span class="buy border border-3 rounded-pill border-danger border-opacity-50 p-2" >Comprar +</span>
+              -->
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" mt-3 ">
+      <div class=" voutchers w-100  ">
+
+        <div class="voutcher-divider " ">
+
+              <div class=" voutcher-left text-center d-flex align-items-center justify-content-center">
+
+          <p class="voutcher-code  line-height">Comprar</p>
+
+        </div>
+        <div class="voutcher-right text-center border-left pt-2">
+
+          <img src="../assets/img/icons/carritocompras .png" class="bi d-block mx-auto mb-1 " alt="hearderInicio"
+            width="24" height="24">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    <!-- *******************************************************************     Producto   ****************************************************************************** -->
+
+    <!-- *******************************************************************   Fin  Producto   ****************************************************************************** -->
+    </div>
+    </div>
+
+
+
+
+  </main>
+
+
+  <!-- *******************************************************************     Footer   ****************************************************************************** -->
+
+
+  <footer class="py-5  border-black border-top">
+
+    <div class="container   ">
+      <div class="row  align-items-center   ">
+
+        <div class="col-6 col-md-2 mb-3 ">
+          <h5>LedesmaPrints 3D</h5>
+          <ul class="nav flex-column ">
+            <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-body-secondary">Inicio</a></li>
+            <li class="nav-item mb-2"><a href="./pages/tienda.html" class="nav-link p-0 text-body-secondary">Tienda</a>
+            </li>
+            <li class="nav-item mb-2"><a href="./pages/galeria.html"
+                class="nav-link p-0 text-body-secondary">Galeria</a></li>
+            <li class="nav-item mb-2"><a href="./pages/nosotros.html"
+                class="nav-link p-0 text-body-secondary">Nosotros</a></li>
+            <li class="nav-item mb-2"><a href="./pages/contacto.html"
+                class="nav-link p-0 text-body-secondary">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-4 mb-3">
+          <h5 class="text-center">¿Dònde estamos?</h5>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.4534025279!2d-58.515698787917955!3d-34.615654769878844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1698371119160!5m2!1ses!2sar"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+
+        <div class=" col-md-5  mb-3">
+
+          <h4 class=" text-center"> ¡Seguinos en redes!</h4>
+
+          <ul class="justify-content-center list-unstyled d-flex">
+
+            <li class="ms-3"><a class="link-body-emphasis" href="https://www.facebook.com/?locale=es_LA"
+                target="_blank"> <img class="bi" width="24" height="24" src="../assets/img/redesSociales/facebook.png"
+                  alt="imagFacebook"></img> </a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/" target="_blank"> <img
+                  class="bi" width="24" height="24" src="../assets/img/redesSociales/instagram.png"
+                  alt="imagInstagram"></img> </a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="https://twitter.com/?lang=es" target="_blank"> <img
+                  class="bi" width="24" height="24" src="../assets/img/redesSociales/twiter.png" alt="imagTwiter"></img>
+              </a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="https://www.youtube.com/" target="_blank"> <img
+                  class="bi" width="24" height="24" src="../assets/img/redesSociales/youtube.png"
+                  alt="imagYoutube"></img> </a></li>
+          </ul>
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-center py-4 my-4 border-top text-bg-dark">
+      <p>&copy; 2023 LedesmaPrints 3D - Todos los derechos reservados.</p>
+
+    </div>
+  </footer>
+
+
+  <script src="../js/bootstrap.bundle.min.js"> </script>
+
 </body>
+
 </html>
