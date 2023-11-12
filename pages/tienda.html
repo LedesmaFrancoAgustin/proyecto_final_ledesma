@@ -7,9 +7,11 @@
   <title>LedesmaPrints 3D</title>
 
   
+  
   <link rel="stylesheet" href="../css/bootstrap.min.css">
- 
+ <!--
   <link rel="stylesheet" href="../css/estiloTienda.css">
+ -->
   <link rel="stylesheet" href="../css/estilo.css"> 
 
 
@@ -20,55 +22,89 @@
 <body >
 
   <header>
-    <div class="px-3 py-2 text-bg-dark border-bottom">
-      <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="../index.html"
-            class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-decoration-none text-white">
-            <img class="bi me-2 " width="32" height="32" src="../assets/img/logo.png" alt="Logo">
-            LedesmaPrints 3D
-          </a>
+   
+    <nav class="navbar navbar-expand-lg bg-body-tertiary colorFondoNav ">
 
-          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-            <li>
-              <a href="../index.html" class="nav-link text-white  ">
-                <img src="../assets/img/icons/hearderInicio.png" class="bi d-block mx-auto mb-1 " alt="hearderInicio"
-                  width="24" height="24">
-                Inicio
-              </a>
-            </li>
-            <li>
-              <a href="../pages/tienda.html" class="nav-link text-secondary">
-                <img src="../assets/img/icons/hearderTienda.png" class="bi d-block mx-auto mb-1 " alt="hearderInicio"
-                  width="24" height="24">
-                Tienda
-              </a>
-            </li>
-            <li>
-              <a href="../pages/galeria.html" class="nav-link text-white">
-                <img src="../assets/img/icons/hearderGaleria.png" class="bi d-block mx-auto mb-1 " alt="hearderInicio"
-                  width="24" height="24">
-                Galeria
-              </a>
-            </li>
-            <li>
-              <a href="../pages/nosotros.html" class="nav-link text-white">
-                <img src="../assets/img/icons/hearderNosotros.png" class="bi d-block mx-auto mb-1 " alt="hearderInicio"
-                  width="24" height="24">
-                Nosotros
-              </a>
-            </li>
-            <li>
-              <a href="../pages/contacto.html" class="nav-link text-white">
-                <img src="../assets/img/icons/hearderContacto.png" class="bi d-block mx-auto mb-1 " alt="hearderInicio"
-                  width="24" height="24">
-                Contacto
-              </a>
-            </li>
-          </ul>
+      <div class="w-100 text-bg-dark">
+
+        <div class="container d-lg-flex ">
+          
+          <div class=" d-lg-flex align-items-center ">
+
+            <div class="d-flex justify-content-center">
+              <a href="../index.html" class="navbar-brand align-items-center my-2 my-lg-0 me-lg-auto text-decoration-none text-white">
+                          <img class="bi me-2 iconoZoom " width="32" height="32" src="../assets/img/logo.png"  alt="Logo"> 
+                          LedesmaPrints 3D
+                        </a>
+            </div>
+
+            <div class="d-flex justify-content-center pb-4 ">
+
+              <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <img src="../assets/img/icons/menu.png"  class="bi d-block mx-auto mb-1 " alt="hearderInicio" width="24" height="24">
+                      </button>
+
+            </div>
+          
+          </div>
+          
+          
+          <div class="collapse navbar-collapse px-3 py-2  " id="navbarSupportedContent">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end px-4 align-items-center" >
+              <li class="nav-item  px-1 iconoTransicion">
+                
+                <a href="../index.html" class="nav-link active text-white  ">
+                  <img src="../assets/img/icons/hearderInicio.png"  class="bi d-block mx-auto mb-1  " alt="hearderInicio" width="24" height="24">
+                  Inicio
+                </a>
+
+              </li>
+
+              <li class="nav-item px-1 iconoTransicion">
+
+                <a href="../pages/tienda.html" class="nav-link text-secondary">
+                  <img src="../assets/img/icons/hearderTienda.png"  class="bi d-block mx-auto mb-1 iconoZoom " alt="hearderInicio" width="24" height="24">
+                  Tienda
+                </a>
+                
+              </li>
+
+              <li class="nav-item px-1 iconoTransicion">
+
+                <a href="../pages/galeria.html" class="nav-link text-white">
+                  <img src="../assets/img/icons/hearderGaleria.png"  class="bi d-block mx-auto mb-1 " alt="hearderInicio" width="24" height="24">
+                  Galeria
+                </a>
+                
+              </li>
+
+              <li class="nav-item px-1 iconoTransicion ">
+
+                <a href="../pages/nosotros.html" class="nav-link text-white">
+                  <img src="../assets/img/icons/hearderNosotros.png"  class="bi d-block mx-auto mb-1 " alt="hearderInicio" width="24" height="24">
+                  Nosotros
+                </a>
+                
+              </li>
+
+              <li class="nav-item px-1 iconoTransicion">
+
+                <a href="../pages/contacto.html" class="nav-link text-white">
+                  <img src="../assets/img/icons/hearderContacto.png"  class="bi d-block mx-auto mb-1 " alt="hearderInicio" width="24" height="24">
+                  Contacto
+                </a>
+                
+              </li>
+
+            </ul>
+           
+          </div>
+
         </div>
+
       </div>
-    </div>
+      </nav>
 
   </header>
 
@@ -120,13 +156,13 @@
     <div class="container mt-5">
 
 
-      <div class="row py-3">
+      <div class="row py-3 ">
 
         <!-- *******************************************************************     Producto 1   ****************************************************************************** -->
 
-        <div class="col-lg-3 col-md-4 col-sm-6 py-2">
+        <div class="col-lg-3 col-md-4 col-sm-6  py-2 " >
 
-          <div class="card w-100 ">
+          <div class="card w-100">
             <div class="image-container">
               <div class="first">
 
@@ -1101,14 +1137,14 @@
         <div class="col-6 col-md-2 mb-3 ">
           <h5>LedesmaPrints 3D</h5>
           <ul class="nav flex-column ">
-            <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-body-secondary">Inicio</a></li>
-            <li class="nav-item mb-2"><a href="./pages/tienda.html" class="nav-link p-0 text-body-secondary">Tienda</a>
+            <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0 text-body-secondary">Inicio</a></li>
+            <li class="nav-item mb-2"><a href="./tienda.html" class="nav-link p-0 text-body-secondary">Tienda</a>
             </li>
-            <li class="nav-item mb-2"><a href="./pages/galeria.html"
+            <li class="nav-item mb-2"><a href="./galeria.html"
                 class="nav-link p-0 text-body-secondary">Galeria</a></li>
-            <li class="nav-item mb-2"><a href="./pages/nosotros.html"
+            <li class="nav-item mb-2"><a href="./nosotros.html"
                 class="nav-link p-0 text-body-secondary">Nosotros</a></li>
-            <li class="nav-item mb-2"><a href="./pages/contacto.html"
+            <li class="nav-item mb-2"><a href="./contacto.html"
                 class="nav-link p-0 text-body-secondary">Contacto</a></li>
           </ul>
         </div>
@@ -1131,16 +1167,16 @@
           <ul class="justify-content-center list-unstyled d-flex">
 
             <li class="ms-3"><a class="link-body-emphasis" href="https://www.facebook.com/?locale=es_LA"
-                target="_blank"> <img class="bi" width="24" height="24" src="../assets/img/redesSociales/facebook.png"
+                target="_blank"> <img class="bi  iconoZoom" width="24" height="24" src="../assets/img/redesSociales/facebook.png"
                   alt="imagFacebook"></img> </a></li>
             <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/" target="_blank"> <img
-                  class="bi" width="24" height="24" src="../assets/img/redesSociales/instagram.png"
+                  class="bi iconoZoom" width="24" height="24" src="../assets/img/redesSociales/instagram.png"
                   alt="imagInstagram"></img> </a></li>
             <li class="ms-3"><a class="link-body-emphasis" href="https://twitter.com/?lang=es" target="_blank"> <img
-                  class="bi" width="24" height="24" src="../assets/img/redesSociales/twiter.png" alt="imagTwiter"></img>
+                  class="bi iconoZoom" width="24" height="24" src="../assets/img/redesSociales/twiter.png" alt="imagTwiter"></img>
               </a></li>
             <li class="ms-3"><a class="link-body-emphasis" href="https://www.youtube.com/" target="_blank"> <img
-                  class="bi" width="24" height="24" src="../assets/img/redesSociales/youtube.png"
+                  class="bi iconoZoom" width="24" height="24" src="../assets/img/redesSociales/youtube.png"
                   alt="imagYoutube"></img> </a></li>
           </ul>
 
@@ -1158,6 +1194,7 @@
 
 
   <script src="../js/bootstrap.bundle.min.js"> </script>
+
 
 </body>
 
