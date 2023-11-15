@@ -204,10 +204,19 @@
   .voutcher-divider{
   
     display: flex;
+
+    
   
   }
   .voutcher-left{
-    width: 60%
+    width: 60%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ 
+
   }
   .voutcher-name{
     color: grey;
@@ -218,6 +227,7 @@
     color: red;
     font-size: 11px;
     font-weight: bold;
+    margin: 0%;
   }
   .voutcher-right{
     width: 40%;	 

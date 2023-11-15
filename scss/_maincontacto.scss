@@ -58,7 +58,22 @@
       background-color: #0062cc;
       border: none;
       cursor: pointer;
+
+      
     }
 
 
 }
+
+
+@media screen  and (width<= 768px){
+
+  .divContacto .contact-form .btnContact {
+    width: 80%;
+    
+    padding: 1.5%;
+    font-weight: 600;
+    
+  }
+}
+  
