@@ -3,37 +3,7 @@
     background-color:rgb(33, 37, 41) ;
 }
 
-.iconoTransicion{
-    transition: scale 3s;
-}
 
-.iconoTransicion:hover{
-    transform:  scale(1.3);
-    filter: opacity(.5);
-
-     /* 
-    img{       
-    }
-*/
-}
-
-
-.iconoZoom {
-    animation: zoom 5s infinite;
-  }
-  
-  @keyframes zoom {
-    0% {
-      transform: scale(1);
-      opacity: 1;
-    }
-    50% {
-      transform: scale(1.3);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
 
 
 
