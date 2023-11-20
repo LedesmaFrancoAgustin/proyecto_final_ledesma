@@ -12,6 +12,7 @@
     
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilo.css">
+        <link rel="stylesheet" href="../css/aos.css">
 
         <link rel="shortcut icon" href="../favicon.ico" type="imgame/x-icon">
 
@@ -63,7 +64,7 @@
                 <li class="nav-item px-1 iconoTransicion">
   
                   <a href="../pages/tienda.html" class="nav-link text-white">
-                    <img src="../assets/img/icons/hearderTienda.png"  class="bi d-block mx-auto mb-1 " alt="hearderInicio" width="24" height="24">
+                    <img src="../assets/img/icons/hearderTienda.png"  class="bi d-block mx-auto mb-1 " alt="hearderTienda" width="24" height="24">
                     Tienda
                   </a>
                   
@@ -72,7 +73,7 @@
                 <li class="nav-item px-1 iconoTransicion">
   
                   <a href="../pages/galeria.html" class="nav-link text-white">
-                    <img src="../assets/img/icons/hearderGaleria.png"  class="bi d-block mx-auto mb-1  " alt="hearderInicio" width="24" height="24">
+                    <img src="../assets/img/icons/hearderGaleria.png"  class="bi d-block mx-auto mb-1  " alt="hearderGaleria" width="24" height="24">
                     Galeria
                   </a>
                   
@@ -81,7 +82,7 @@
                 <li class="nav-item px-1 iconoTransicion ">
   
                   <a href="../pages/nosotros.html" class="nav-link text-secondary">
-                    <img src="../assets/img/icons/hearderNosotros.png"  class="bi d-block mx-auto mb-1 iconoZoom" alt="hearderInicio" width="24" height="24">
+                    <img src="../assets/img/icons/hearderNosotros.png"  class="bi d-block mx-auto mb-1 iconoZoom" alt="hearderNosotros" width="24" height="24">
                     Nosotros
                   </a>
                   
@@ -90,7 +91,7 @@
                 <li class="nav-item px-1 iconoTransicion">
   
                   <a href="../pages/contacto.html" class="nav-link text-white">
-                    <img src="../assets/img/icons/hearderContacto.png"  class="bi d-block mx-auto mb-1 " alt="hearderInicio" width="24" height="24">
+                    <img src="../assets/img/icons/hearderContacto.png"  class="bi d-block mx-auto mb-1 " alt="hearderContacto" width="24" height="24">
                     Contacto
                   </a>
                   
@@ -159,8 +160,9 @@
 <div class=" divTestimonios">
   <div class="container mt-5 mb-5 " >
     
-    <div class="row g-2">
-        <div class="col-md-4">
+    <div class="row g-2" >
+
+        <div class="col-md-4" data-aos="fade-down" data-aos-easing="linear"  data-aos-duration="1500" >
             <div class="cardTestimonio p-3 text-center px-4">
                 
                 <div class="user-image">  
@@ -176,9 +178,9 @@
             </div>
         </div>
         
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-duration="3000" >
             
-            <div class="cardTestimonio p-3 text-center px-4">
+            <div class="cardTestimonio p-3 text-center px-4" >
                 
                 <div class="user-image"> 
                     <img src="../assets/img/icons/personas.png" class="rounded-circle" width="80">   
@@ -194,14 +196,12 @@
             
         </div>
         
-        <div class="col-md-4">
+        <div class="col-md-4"  data-aos="fade-down" data-aos-easing="linear"  data-aos-duration="1500">
             
-            <div class="cardTestimonio p-3 text-center px-4">
+            <div class="cardTestimonio p-3 text-center px-4" >
                 
                 <div class="user-image">
-                    
-            <img src="../assets/img/icons/personas.png" class="rounded-circle" width="80">
-                    
+                    <img src="../assets/img/icons/personas.png" class="rounded-circle" width="80">
                 </div>
                 
                 <div class="user-content">
@@ -275,6 +275,10 @@
 
       
       <script src="../js/bootstrap.bundle.min.js"> </script>
+
+      <script src="../js/aos.js"> </script>
+
+      <script> AOS.init(); </script>
 
     
 </body>
